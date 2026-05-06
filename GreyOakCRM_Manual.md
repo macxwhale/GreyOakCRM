@@ -14,8 +14,8 @@ https://greyoakcrm.co.ke/admin/login
 - Access to a web browser (Chrome, Edge, Firefox, etc.)
 - Internet connectivity
 - The following credentials (replace with your own if different):
-  - **Email:** `jcsoham@gmail.com`
-  - **Password:** `12345678`
+  - **Email:** `*`
+  - **Password:** `*`
 
 ---
 
@@ -27,8 +27,8 @@ https://greyoakcrm.co.ke/admin/login
    - **Password field** – placeholder **"Password"**, identified by the element ID `your-password`.
 3. **Enter credentials**:
    ```text
-   Email: jcsoham@gmail.com
-   Password: 12345678
+   Email: *
+   Password: *
    ```
 4. **Click the "Sign In" button** to submit the form.
 5. Upon successful authentication you will be redirected to the CRM dashboard.
