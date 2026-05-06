@@ -3,8 +3,8 @@
 ## Table of Contents
 1.  [Introduction](#1-introduction)
 2.  [Getting Started](#2-getting-started)
-3.  [Lead Management Pipeline](#3-lead-management-pipeline)
-4.  [How to Create a Client (Customer)](#4-how-to-create-a-client-customer)
+3.  [How to Create a Client (Customer)](#3-how-to-create-a-client-customer)
+4.  [Lead Management Pipeline](#4-lead-management-pipeline)
 5.  [The Sale Journey (Step-by-Step)](#5-the-sale-journey-step-by-step)
 6.  [Financial Management](#6-financial-management)
 7.  [Property & Inventory Control](#7-property--inventory-control)
@@ -37,37 +37,14 @@ The **Grey Oak Real Estate Management System** is an all-in-one ERP/CRM solution
 
 ---
 
-## 3. Lead Management Pipeline
+## 3. How to Create a Client (Customer)
 
-### 3.1 Capturing Leads
-Leads can be entered manually or synced via Web-to-Lead forms.
-1.  Navigate to `Leads > New Lead`.
-2.  **Required Fields:** Name, Phone, Source, and Assigned Staff.
-3.  **Pro Tip:** Always tag the specific project the lead is interested in (e.g., *#NaivashaBreeze*).
+In the Grey Oak CRM, "Clients" are referred to as **Customers**. As the core dependency for all transactions, a customer must exist before any sales, invoices, or titles can be generated.
 
-### 3.2 Kanban vs. List View
-*   **Kanban:** Best for visual tracking of sales progress.
-*   **List:** Best for bulk actions like sending mass emails or SMS updates about site visits.
-
----
-
-## 4. How to Create a Client (Customer)
-
-In the Grey Oak CRM, "Clients" are referred to as **Customers**. There are two primary ways to add a new customer to the system.
-
-### 4.1 Method A: Converting a Lead (Recommended)
-This method is used when a prospect has already been tracked in the system and is now ready to make a purchase.
-1.  Go to `Leads` and select the specific prospect.
-2.  In the top right corner, click the **"Convert to Customer"** button.
-3.  A form will appear pre-filled with the lead's information.
-4.  **Review the details**: Ensure the Phone Number and Email are correct.
-5.  Click **Save**.
-    *   *Note: All previous notes, tasks, and site visit history will automatically transfer to the new Customer profile.*
-
-### 4.2 Method B: Manual Creation
-Use this method if the buyer is a walk-in or referral who is purchasing immediately without a prior lead history.
+### 3.1 Manual Creation (Direct)
+Use this method if the buyer is a walk-in or referral who is purchasing immediately.
 1.  Navigate to `Customers > New Customer`.
-2.  **Company/Name Field**: Enter the Full Name of the individual (or company name if applicable).
+2.  **Company/Name Field**: Enter the Full Name of the individual.
 3.  **VAT Number/KRA PIN**: Enter the client's KRA PIN for tax compliance.
 4.  **Contact Information**:
     *   **Phone Number**: Crucial for SMS updates.
@@ -76,12 +53,37 @@ Use this method if the buyer is a walk-in or referral who is purchasing immediat
 6.  **Groups**: Assign the client to a group like *"Platinum Buyer"* or *"Nanyuki Phase 2 Clients"* for better filtering.
 7.  Click **Save**.
 
-### 4.3 Adding Multiple Contacts
+### 3.2 Converting a Lead
+This method is used when a prospect has already been tracked in the system.
+1.  Go to `Leads` and select the specific prospect.
+2.  In the top right corner, click the **"Convert to Customer"** button.
+3.  Review the pre-filled details and click **Save**.
+    *   *Note: All previous notes, tasks, and site visit history will automatically transfer to the new Customer profile.*
+
+### 3.3 Adding Multiple Contacts
 If a plot is being bought by two people (e.g., a couple), you can add additional contacts under the same Customer profile:
 1.  Open the **Customer Profile**.
 2.  Go to the **Contacts** tab.
 3.  Click **New Contact**.
 4.  Enter the second person's details. You can choose who receives the email notifications for invoices.
+
+---
+
+## 4. Lead Management Pipeline
+Leads are potential prospects who are still in the inquiry stage before becoming a permanent Customer.
+
+### 4.1 Capturing Leads
+Leads can be entered manually or synced via Web-to-Lead forms.
+1.  Navigate to `Leads > New Lead`.
+2.  **Required Fields**: Name, Phone, Source, and Assigned Staff.
+3.  **Pro Tip**: Always tag the specific project the lead is interested in (e.g., *#NaivashaBreeze*).
+
+### 4.2 Lead Statuses
+*   **New**: Fresh inquiry.
+*   **Contacted**: Needs identified.
+*   **Site Visit Scheduled**: Viewing booked (typically Wed/Sat).
+*   **Interested**: Attended viewing, choosing a plot.
+*   **Lost**: Decided not to purchase.
 
 ---
 
