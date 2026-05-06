@@ -4,18 +4,19 @@
 1.  [Introduction](#1-introduction)
 2.  [Getting Started](#2-getting-started)
 3.  [Lead Management Pipeline](#3-lead-management-pipeline)
-4.  [The Sale Journey (Step-by-Step)](#4-the-sale-journey-step-by-step)
-5.  [Financial Management](#5-financial-management)
-6.  [Property & Inventory Control](#6-property--inventory-control)
-7.  [Document & Title Deed Tracking](#7-document--title-deed-tracking)
-8.  [Reporting & Analytics](#8-reporting--analytics)
-9.  [Expense Tracking (Project Costs)](#9-expense-tracking-project-costs)
-10. [Staff Performance & Tasks](#10-staff-performance--tasks)
-11. [Communication Templates (Email/SMS)](#11-communication-templates-emailsms)
-12. [Contract & Document Automation](#12-contract--document-automation)
-13. [User Roles & Permissions](#13-user-roles--permissions)
-14. [System Settings & Customization](#14-system-settings--customization)
-15. [Troubleshooting & Support](#15-troubleshooting--support)
+4.  [How to Create a Client (Customer)](#4-how-to-create-a-client-customer)
+5.  [The Sale Journey (Step-by-Step)](#5-the-sale-journey-step-by-step)
+6.  [Financial Management](#6-financial-management)
+7.  [Property & Inventory Control](#7-property--inventory-control)
+8.  [Document & Title Deed Tracking](#8-document--title-deed-tracking)
+9.  [Reporting & Analytics](#9-reporting--analytics)
+10. [Expense Tracking (Project Costs)](#10-expense-tracking-project-costs)
+11. [Staff Performance & Tasks](#11-staff-performance--tasks)
+12. [Communication Templates (Email/SMS)](#12-communication-templates-emailsms)
+13. [Contract & Document Automation](#13-contract--document-automation)
+14. [User Roles & Permissions](#14-user-roles--permissions)
+15. [System Settings & Customization](#15-system-settings--customization)
+16. [Troubleshooting & Support](#16-troubleshooting--support)
 
 ---
 
@@ -50,7 +51,41 @@ Leads can be entered manually or synced via Web-to-Lead forms.
 
 ---
 
-## 4. The Sale Journey (Step-by-Step)
+## 4. How to Create a Client (Customer)
+
+In the Grey Oak CRM, "Clients" are referred to as **Customers**. There are two primary ways to add a new customer to the system.
+
+### 4.1 Method A: Converting a Lead (Recommended)
+This method is used when a prospect has already been tracked in the system and is now ready to make a purchase.
+1.  Go to `Leads` and select the specific prospect.
+2.  In the top right corner, click the **"Convert to Customer"** button.
+3.  A form will appear pre-filled with the lead's information.
+4.  **Review the details**: Ensure the Phone Number and Email are correct.
+5.  Click **Save**.
+    *   *Note: All previous notes, tasks, and site visit history will automatically transfer to the new Customer profile.*
+
+### 4.2 Method B: Manual Creation
+Use this method if the buyer is a walk-in or referral who is purchasing immediately without a prior lead history.
+1.  Navigate to `Customers > New Customer`.
+2.  **Company/Name Field**: Enter the Full Name of the individual (or company name if applicable).
+3.  **VAT Number/KRA PIN**: Enter the client's KRA PIN for tax compliance.
+4.  **Contact Information**:
+    *   **Phone Number**: Crucial for SMS updates.
+    *   **Email Address**: Crucial for automated invoicing.
+5.  **Billing & Shipping**: Enter the client's physical or postal address.
+6.  **Groups**: Assign the client to a group like *"Platinum Buyer"* or *"Nanyuki Phase 2 Clients"* for better filtering.
+7.  Click **Save**.
+
+### 4.3 Adding Multiple Contacts
+If a plot is being bought by two people (e.g., a couple), you can add additional contacts under the same Customer profile:
+1.  Open the **Customer Profile**.
+2.  Go to the **Contacts** tab.
+3.  Click **New Contact**.
+4.  Enter the second person's details. You can choose who receives the email notifications for invoices.
+
+---
+
+## 5. The Sale Journey (Step-by-Step)
 
 ### Step 1: Reserving a Plot
 1.  Go to **Property/Plots**.
