@@ -2,8 +2,8 @@
 
 ## Table of Contents
 1.  [Introduction](#1-introduction)
-2.  [Getting Started](#2-getting-started)
-3.  [How to Create a Client (Customer)](#3-how-to-create-a-client-customer)
+2.  [Getting Started & Navigation](#2-getting-started--navigation)
+3.  [How to Create a Client](#3-how-to-create-a-client)
 4.  [Lead Management Pipeline](#4-lead-management-pipeline)
 5.  [The Sale Journey (Step-by-Step)](#5-the-sale-journey-step-by-step)
 6.  [Financial Management](#6-financial-management)
@@ -25,65 +25,70 @@ The **Grey Oak Real Estate Management System** is an all-in-one ERP/CRM solution
 
 ---
 
-## 2. Getting Started
+## 2. Getting Started & Navigation
 
 ### 2.1 Access & Security
 *   **Portal URL:** `https://greyoakcrm.co.ke/admin/login`
-*   **Credentials:** Managed by the IT Administrator. Ensure your password contains symbols and numbers for security.
-*   **Session Timeout:** For security, sessions expire after 2 hours of inactivity.
+*   **Authentication:** Use your corporate email and the provided password.
+*   **Logout:** Click the profile icon in the top right corner of the header.
 
-> [!IMPORTANT]
-> **Data Privacy:** All customer data must be handled in compliance with the Data Protection Act of Kenya.
+### 2.2 Navigation Menu (Sidebar)
+The left sidebar is your primary navigation tool. The modules are:
+1.  **Dashboard**: Business overview and summary statistics.
+2.  **Clients**: Central database for all property buyers.
+3.  **Leads**: Tracking for potential prospects.
+4.  **Projects**: Management of land projects (e.g., *Arista Eminence 96*).
+5.  **User Management**: Staff accounts and access control.
+6.  **Account**: Financial modules (**Payments**, **Expenses**).
+7.  **Reports**: Detailed business analytics and lead status reports.
+8.  **Master**: Configuration settings (Currencies, Lead Sources, Property Sizes, etc.).
 
 ---
 
-## 3. How to Create a Client (Customer)
+## 3. How to Create a Client
 
-In the Grey Oak CRM, "Clients" are referred to as **Customers**. As the core dependency for all transactions, a customer must exist before any sales, invoices, or titles can be generated.
+In the Grey Oak CRM, all buyers are managed under the **Clients** module. As the core dependency for all transactions, a client record must be created before any project, property, or payment can be linked.
 
-### 3.1 Manual Creation (Direct)
-Use this method if the buyer is a walk-in or referral who is purchasing immediately.
-1.  Navigate to `Customers > New Customer`.
-2.  **Company/Name Field**: Enter the Full Name of the individual.
-3.  **VAT Number/KRA PIN**: Enter the client's KRA PIN for tax compliance.
-4.  **Contact Information**:
-    *   **Phone Number**: Crucial for SMS updates.
-    *   **Email Address**: Crucial for automated invoicing.
-5.  **Billing & Shipping**: Enter the client's physical or postal address.
-6.  **Groups**: Assign the client to a group like *"Platinum Buyer"* or *"Nanyuki Phase 2 Clients"* for better filtering.
-7.  Click **Save**.
+### 3.1 Adding a Client Manually
+1.  Navigate to **Clients** in the left sidebar.
+2.  Click the green **+ Add Client** button located above the client list table.
+3.  Complete the **Add Client Form** with the following details:
+    *   **First Name** & **Last Name** (Required)
+    *   **Nationality**
+    *   **ID Number / PP Number**: Essential for legal documentation.
+    *   **Gender**
+    *   **Projects**: Link the client to a specific project (e.g., *Arista Eminence 96*).
+    *   **Property**: Specify the plot/unit if known.
+    *   **Assigned To**: Select the staff member responsible for this client (Required).
+    *   **Email**: Primary communication address (Required).
+    *   **Contact Number**: Primary mobile number (Required).
+    *   **Address Details**: City, County, and Post Code.
+4.  Click the **Add Client** button at the bottom of the form to save.
 
-### 3.2 Converting a Lead
-This method is used when a prospect has already been tracked in the system.
-1.  Go to `Leads` and select the specific prospect.
-2.  In the top right corner, click the **"Convert to Customer"** button.
-3.  Review the pre-filled details and click **Save**.
-    *   *Note: All previous notes, tasks, and site visit history will automatically transfer to the new Customer profile.*
+### 3.2 Converting a Lead to a Client
+If the prospect is already in the system as a Lead:
+1.  Go to **Leads** in the sidebar.
+2.  Locate the prospect in the list and click their name.
+3.  Click the **Convert to Customer** button (top right of the lead profile).
+4.  Verify the pre-filled information and save.
+    *   *Note: Converting a lead ensures all historical notes and site visit logs are preserved.*
 
-### 3.3 Adding Multiple Contacts
-If a plot is being bought by two people (e.g., a couple), you can add additional contacts under the same Customer profile:
-1.  Open the **Customer Profile**.
+### 3.3 Adding Multiple Contacts to a Client
+For joint purchases (e.g., a couple or partners):
+1.  Open the **Client Profile** from the list.
 2.  Go to the **Contacts** tab.
-3.  Click **New Contact**.
-4.  Enter the second person's details. You can choose who receives the email notifications for invoices.
+3.  Click **New Contact** to add secondary buyer details.
 
 ---
 
 ## 4. Lead Management Pipeline
-Leads are potential prospects who are still in the inquiry stage before becoming a permanent Customer.
+Leads are potential prospects still in the inquiry stage.
 
-### 4.1 Capturing Leads
-Leads can be entered manually or synced via Web-to-Lead forms.
-1.  Navigate to `Leads > New Lead`.
-2.  **Required Fields**: Name, Phone, Source, and Assigned Staff.
-3.  **Pro Tip**: Always tag the specific project the lead is interested in (e.g., *#NaivashaBreeze*).
-
-### 4.2 Lead Statuses
-*   **New**: Fresh inquiry.
-*   **Contacted**: Needs identified.
-*   **Site Visit Scheduled**: Viewing booked (typically Wed/Sat).
-*   **Interested**: Attended viewing, choosing a plot.
-*   **Lost**: Decided not to purchase.
+### 4.1 Capturing a New Lead
+1.  Navigate to **Leads** in the sidebar.
+2.  Click the **+ Add Lead** button.
+3.  Fill in the inquiry source and contact details.
+4.  **Status Tracking**: Update the lead status as they progress from *New* to *Site Visit Scheduled* to *Interested*.
 
 ---
 
