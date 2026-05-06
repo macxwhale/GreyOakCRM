@@ -78,13 +78,27 @@ For joint purchases (e.g., a couple or partners):
 ---
 
 ## 4. Lead Management Pipeline
-Leads are potential prospects still in the inquiry stage.
+Leads are potential prospects who are still in the inquiry stage. The CRM tracks the journey from the first touchpoint to the final sale.
 
 ### 4.1 Capturing a New Lead
-1.  Navigate to **Leads** in the sidebar.
-2.  Click the **+ Add Lead** button.
-3.  Fill in the inquiry source and contact details.
-4.  **Status Tracking**: Update the lead status as they progress from *New* to *Site Visit Scheduled* to *Interested*.
+1.  Navigate to **Leads** in the left sidebar.
+2.  Click the green **+ Add Lead** button.
+3.  Complete the **Add Lead Form** with the following exact fields:
+    *   **Client Name**: Select an existing client or click the **+ Add Client** button next to the field to create one instantly.
+    *   **Status**: Select the current stage (e.g., *New*, *Contacted*, *Proposal Sent*).
+    *   **Assigned To**: Select the staff member responsible for the lead.
+    *   **Commission [In %]**: Enter the projected sales commission rate.
+    *   **Enquiry Date**: Select the date of the first inquiry.
+    *   **Next Follow up**: Set the date for the next contact attempt.
+    *   **Lead Source**: Select where the lead came from (e.g., *Facebook*, *Walk-In*).
+    *   **Projects** & **Property**: Link the lead to the specific land project and plot they are interested in.
+    *   **Brief in words**: Enter any specific comments or requirements from the prospect.
+4.  Click **Add Lead** to save.
+
+### 4.2 Lead Tracking Features
+*   **Follow-up Alerts**: The system displays a red **"Overdue"** badge in the lead list for any leads whose "Next Follow up" date has passed.
+*   **Filtering**: Use the filters at the top of the Lead List to view leads by **Status**, **Agent**, or **Project**.
+*   **Conversion**: When a lead pays a deposit, you can convert them directly to a **Client** (if not already created) and proceed to the payment schedule.
 
 ---
 
