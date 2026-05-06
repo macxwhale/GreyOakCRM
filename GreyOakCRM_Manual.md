@@ -1,214 +1,177 @@
-# Grey Oak Real Estate Management System (CRM) - Ultimate User Manual
+# Grey Oak CRM - Functional User Manual
 
-## Table of Contents
-1.  [Introduction](#1-introduction)
-2.  [Getting Started & Navigation](#2-getting-started--navigation)
-3.  [How to Create a Client](#3-how-to-create-a-client)
-4.  [Lead Management Pipeline](#4-lead-management-pipeline)
-5.  [The Sale Journey (Step-by-Step)](#5-the-sale-journey-step-by-step)
-6.  [Financial Management (Account Module)](#6-financial-management-account-module)
-7.  [Property & Inventory Control (Projects Module)](#7-property--inventory-control-projects-module)
-8.  [Document & Title Deed Tracking](#8-document--title-deed-tracking)
-9.  [Reporting & Analytics](#9-reporting--analytics)
-10. [User Management (Staff Access)](#10-user-management-staff-access)
-11. [Master Setup (Configuration)](#11-master-setup-configuration)
-12. [Troubleshooting & Support](#12-troubleshooting--support)
+## 1. Sidebar Navigation Overview
+The left sidebar provides access to all core modules:
+*   **Dashboard**: System overview.
+*   **Clients**: Manage buyer database.
+*   **Leads**: Track inquiries and prospects.
+*   **Projects**: Manage land inventory and plots.
+*   **User Management**: Staff accounts and roles.
+*   **Account**: Financial tracking (Payments & Expenses).
+*   **Reports**: Access to 10 distinct business reports.
+*   **Master**: System-wide configuration.
 
 ---
 
-## 1. Introduction
-The **Grey Oak Real Estate Management System** is an all-in-one ERP/CRM solution designed to automate the complexities of land investment. This guide covers every feature, from the first contact in **Nanyuki** to the final Title Deed issuance in the **Nairobi CBD** office.
+## 2. Clients Module
+Used to manage the permanent database of property buyers.
+
+### 2.1 Adding a New Client
+*   **Action**: Click **Clients** > **+ Add Client** (Green button).
+*   **Fields**:
+    *   First Name *
+    *   Last Name *
+    *   Nationality
+    *   ID Number / PP Number
+    *   Gender
+    *   Projects
+    *   Property
+    *   Lead Source
+    *   Assigned To *
+    *   Email *
+    *   Email 2
+    *   Contact Number *
+    *   Phone
+    *   Other Phone
+    *   City
+    *   County
+    *   Post Code
+    *   Address
 
 ---
 
-## 2. Getting Started & Navigation
+## 3. Leads Module
+Used to track inquiries before they become clients.
 
-### 2.1 Access & Security
-*   **Portal URL:** `https://greyoakcrm.co.ke/admin/login`
-*   **Authentication:** Use your corporate email and the provided password.
-*   **Logout:** Click the profile icon in the top right corner of the header.
-
-### 2.2 Navigation Menu (Sidebar)
-The left sidebar is your primary navigation tool. The modules are:
-1.  **Dashboard**: Business overview and summary statistics.
-2.  **Clients**: Central database for all property buyers.
-3.  **Leads**: Tracking for potential prospects.
-4.  **Projects**: Management of land projects (e.g., *Arista Eminence 96*).
-5.  **User Management**: Staff accounts and access control.
-6.  **Account**: Financial modules (**Payments**, **Expenses**).
-7.  **Reports**: Detailed business analytics and lead status reports.
-8.  **Master**: Configuration settings (Currencies, Lead Sources, Property Sizes, etc.).
-
----
-
-## 3. How to Create a Client
-
-In the Grey Oak CRM, all buyers are managed under the **Clients** module. As the core dependency for all transactions, a client record must be created before any project, property, or payment can be linked.
-
-### 3.1 Adding a Client Manually
-1.  Navigate to **Clients** in the left sidebar.
-2.  Click the green **+ Add Client** button located above the client list table.
-3.  Complete the **Add Client Form** with the following details:
-    *   **First Name** & **Last Name** (Required)
-    *   **Nationality**
-    *   **ID Number / PP Number**: Essential for legal documentation.
-    *   **Gender**
-    *   **Projects**: Link the client to a specific project (e.g., *Arista Eminence 96*).
-    *   **Property**: Specify the plot/unit if known.
-    *   **Assigned To**: Select the staff member responsible for this client (Required).
-    *   **Email**: Primary communication address (Required).
-    *   **Contact Number**: Primary mobile number (Required).
-    *   **Address Details**: City, County, and Post Code.
-4.  Click the **Add Client** button at the bottom of the form to save.
-
-### 3.2 Converting a Lead to a Client
-If the prospect is already in the system as a Lead:
-1.  Go to **Leads** in the sidebar.
-2.  Locate the prospect in the list and click their name.
-3.  Click the **Convert to Customer** button (top right of the lead profile).
-4.  Verify the pre-filled information and save.
-    *   *Note: Converting a lead ensures all historical notes and site visit logs are preserved.*
-
-### 3.3 Adding Multiple Contacts to a Client
-For joint purchases (e.g., a couple or partners):
-1.  Open the **Client Profile** from the list.
-2.  Go to the **Contacts** tab.
-3.  Click **New Contact** to add secondary buyer details.
+### 3.1 Adding a New Lead
+*   **Action**: Click **Leads** > **+ Add Lead** (Green button).
+*   **Fields**:
+    *   Client Name * (Includes a **+ Add Client** shortcut)
+    *   Status *
+    *   Assigned To *
+    *   Commission [In %] *
+    *   Enquiry Date *
+    *   Next Follow up
+    *   Lead Source *
+    *   Projects *
+    *   Property *
+    *   Brief in words (Comments)
 
 ---
 
-## 4. Lead Management Pipeline
-Leads are potential prospects who are still in the inquiry stage. The CRM tracks the journey from the first touchpoint to the final sale.
+## 4. Projects Module
+Used to manage land projects and individual plots.
 
-### 4.1 Capturing a New Lead
-1.  Navigate to **Leads** in the left sidebar.
-2.  Click the green **+ Add Lead** button.
-3.  Complete the **Add Lead Form** with the following exact fields:
-    *   **Client Name**: Select an existing client or click the **+ Add Client** button next to the field to create one instantly.
-    *   **Status**: Select the current stage (e.g., *New*, *Contacted*, *Proposal Sent*).
-    *   **Assigned To**: Select the staff member responsible for the lead.
-    *   **Commission [In %]**: Enter the projected sales commission rate.
-    *   **Enquiry Date**: Select the date of the first inquiry.
-    *   **Next Follow up**: Set the date for the next contact attempt.
-    *   **Lead Source**: Select where the lead came from (e.g., *Facebook*, *Walk-In*).
-    *   **Projects** & **Property**: Link the lead to the specific land project and plot they are interested in.
-    *   **Brief in words**: Enter any specific comments or requirements from the prospect.
-4.  Click **Add Lead** to save.
+### 4.1 How to Add a Project
+1.  Navigate to **Projects** in the left sidebar.
+2.  Click the green **+ Add Project** button (top right of the list).
+3.  **Complete Project Information**:
+    *   **Project Name ***: The name of the land phase (e.g., *Athi River Phase 4*).
+    *   **Project Image**: Upload the marketing flyer or site plan image.
+    *   **Short Description**: Brief overview of the location or amenities.
+    *   **Location Details**: Enter the **Address**, **City**, and **Country**.
 
-### 4.2 Lead Tracking Features
-*   **Follow-up Alerts**: The system displays a red **"Overdue"** badge in the lead list for any leads whose "Next Follow up" date has passed.
-*   **Filtering**: Use the filters at the top of the Lead List to view leads by **Status**, **Agent**, or **Project**.
-*   **Conversion**: When a lead pays a deposit, you can convert them directly to a **Client** (if not already created) and proceed to the payment schedule.
-
----
-
-## 5. The Sale Journey (Step-by-Step)
-
-### Step 1: Reserving a Property
-1.  Navigate to **Projects** in the sidebar.
-2.  Select the specific project (e.g., *Arista Eminence 96*).
-3.  Identify the **Property Number** and verify the **LR Number**.
-4.  Change the **Property Status** to **Reserved** once the client confirms their choice.
-
-### Step 2: Client Documentation
-(See [Section 3: How to Create a Client](#3-how-to-create-a-client)). Ensure the client record is linked to the correct project and property.
-
-### Step 3: Recording Payments & Installments
-Navigate to **Account > Payments** to set up the billing plan.
+### 4.2 How to Add Plots (Properties)
+The system allows you to add all individual plots for a project on a single page using the **Properties** sub-form.
+1.  Scroll to the bottom of the project creation form.
+2.  **To add multiple plots**: Click the green **+ Add Property** button. Each click will create a new numbered section (e.g., *Property 2*, *Property 3*).
+3.  For each plot, fill in the following:
+    *   **Property Type**: (e.g., Residential).
+    *   **For Sale or Rent**: Select the transaction type.
+    *   **Property Number**: The plot identifier (e.g., *Plot 12*).
+    *   **LR Number**: The Land Reference number for the title.
+    *   **Area & Unit**: Enter the size (e.g., *0.125*) and select **Acre** or **Sq Ft**.
+    *   **Price & Currency**: Set the price and currency (e.g., *KES*).
+    *   **Property Status**: Set to *Available*, *Reserved*, or *Sold*.
+4.  **To remove a plot**: Click the **Remove** button at the top right of the specific property's section.
+5.  **Save**: Click the **Submit** button at the bottom of the page to save the project and all added plots.
 
 ---
 
-## 6. Financial Management (Account Module)
+## 5. Account Module
+Used for financial tracking of payments and expenses.
 
-The **Account** module is where all revenue and project-related costs are tracked.
+### 5.1 Recording a Payment
+*   **Action**: Click **Account** > **Payments** > **+ Add Payment**.
+*   **Fields**:
+    *   Clients *
+    *   Project
+    *   Property
+    *   Agent/Assign *
+    *   Agent/Assign Commission [%] *
+    *   Total Amount *
+    *   Due Date *
+    *   **Payment Schedule (Sub-form)**:
+        *   Payment Type *
+        *   Expected Date *
+        *   Expected Amount *
+        *   Actual Date
+        *   Actual Amount
+    *   Upload Documents
+    *   Notes
 
-### 6.1 Recording Payments
-1.  Navigate to **Account > Payments**.
-2.  Click the green **+ Add Payment** button.
-3.  **Client & Property**: Select the Client, Project, and Property from the dropdowns.
-4.  **Commission**: Assign the Sales Agent and their commission percentage.
-5.  **Payment Schedule**: 
-    *   Add rows for each installment.
-    *   Enter **Expected Date** and **Expected Amount**.
-    *   As the client pays, enter the **Actual Date** and **Actual Amount**.
-6.  Click **Add Payment**.
-
-### 6.2 Managing Expenses
-Track operational and project-specific costs.
-1.  Navigate to **Account > Expenses**.
-2.  Click the **+ Add Expense** button.
-3.  **Fields**: Title, Amount (KES), Date, and Payment Method.
-4.  **Linking**: Link the expense to a specific **Sales Agent**, **Client**, and **Project** to track total project profitability.
-
----
-
-## 7. Property & Inventory Control (Projects Module)
-
-### 7.1 Adding a New Project
-1.  Navigate to **Projects**.
-2.  Click the **+ Add Project** button.
-3.  **Project Details**: Name, Image (Marketing flyer), and Address.
-4.  **Properties Sub-form**: Add individual plots/units by LR Number and Property Number. Specify Area (Acre/Sq Ft) and Price (KES/USD).
-
----
-
-## 8. Document & Title Deed Tracking
-Ensure all "Sold" properties have their corresponding legal documents uploaded in the **Client Files**:
-- **ID/Passport Copy**
-- **KRA PIN Certificate**
-- **Signed Sale Agreement**
-- **Title Deed Scan** (once processing is complete).
+### 5.2 Recording an Expense
+*   **Action**: Click **Account** > **Expenses** > **+ Add Expense**.
+*   **Fields**:
+    *   Expense Title *
+    *   Amount (in KES)
+    *   Date
+    *   Payment Method
+    *   Reference No.
+    *   Sales Agent *
+    *   Client
+    *   Project
+    *   Property
+    *   Description
+    *   Notes
 
 ---
 
-## 9. Reporting & Analytics
+## 6. User Management
+Used to manage staff accounts and roles.
 
-The **Reports** module provides real-time insights into your business.
-
-### 9.1 Available Reports
-*   **Sales Lead Report**: Track the status of every inquiry.
-*   **Payment Status Report**: Identify clients with pending balances.
-*   **Agent Performance Report**: Monitor sales targets and closures by staff.
-*   **Expense Report**: Summary of all costs incurred.
-*   **Customer Detail Report**: Full database of client contact information.
+### 6.1 Adding a New User
+*   **Action**: Click **User Management** > **+ Add User**.
+*   **Fields**:
+    *   Profile Picture
+    *   ID Proof (Image or PDF)
+    *   Username *
+    *   User Role *
+    *   First Name *
+    *   Last Name *
+    *   Email Address *
+    *   Contact Number *
+    *   Gender *
+    *   Date Of Birth *
+    *   Password *
+    *   Confirm Password *
+    *   Status *
 
 ---
 
-## 10. User Management (Staff Access)
-
-### 10.1 Adding a New User
-1.  Navigate to **User Management**.
-2.  Click the **+ Add User** button.
-3.  **Details**: Username, User Role, First/Last Name, Email, and Contact Number.
-4.  **Security**: Set a temporary password and ensure the status is **Active**.
+## 7. Reports
+Access the following reports from the **Reports** menu:
+1.  **Expense Report**
+2.  **Payments Report**
+3.  **Sales Lead Report**
+4.  **Agent Wise Sales Leads**
+5.  **Agent Performance Report**
+6.  **Agent Commission Report**
+7.  **Agent Expenses Report**
+8.  **Customer Detail Report**
+9.  **Lead Status Report**
+10. **Payment Status Report**
 
 ---
 
-## 11. Master Setup (Configuration)
-
-The **Master** module allows Administrators to configure the system backbone.
-
-### 11.1 Setup Categories
-*   **Currencies**: Define KES/USD rates.
+## 8. Master Setup
+Configure system-wide options in the **Master** menu:
+*   **Currencies**: Set exchange rates.
+*   **Countries**: Define geographic locations.
 *   **Property Sizes**: Define units (Acre, Sq Ft).
-*   **Lead Sources**: Track where leads come from (Facebook, Referrals).
-*   **Payment Methods**: M-Pesa, Bank Transfer, etc.
-*   **Roles & Permissions**: Manage what different staff roles can see and do.
+*   **Payment Methods**: Define valid payment modes.
+*   **Lead Sources**: Define inquiry channels.
+*   **Roles & Permissions**: Manage access levels for staff roles.
 
 ---
-
-## 12. Troubleshooting & Support
-
-| Symptom | Cause | Solution |
-| :--- | :--- | :--- |
-| **Plot Not Available** | Already Reserved | Check the status in the Projects module. |
-| **Balance Inconsistency** | Payment not linked | Ensure actual payments are recorded in the Payment Schedule. |
-| **Email Not Sent** | SMTP Error | Check the system settings or contact IT. |
-
-### Support Contact
-*   **Email**: info@greyoak.co.ke
-*   **Physical Office**: Trust Mansion, Tubman Road, Nairobi CBD.
-
----
-
-*Manual Version: 5.0 | Complete Verified Edition | © 2026 Grey Oak Limited*
+*Verified functional guide as of May 2026*
