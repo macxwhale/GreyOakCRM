@@ -6,17 +6,13 @@
 3.  [How to Create a Client](#3-how-to-create-a-client)
 4.  [Lead Management Pipeline](#4-lead-management-pipeline)
 5.  [The Sale Journey (Step-by-Step)](#5-the-sale-journey-step-by-step)
-6.  [Financial Management](#6-financial-management)
-7.  [Property & Inventory Control](#7-property--inventory-control)
+6.  [Financial Management (Account Module)](#6-financial-management-account-module)
+7.  [Property & Inventory Control (Projects Module)](#7-property--inventory-control-projects-module)
 8.  [Document & Title Deed Tracking](#8-document--title-deed-tracking)
 9.  [Reporting & Analytics](#9-reporting--analytics)
-10. [Expense Tracking (Project Costs)](#10-expense-tracking-project-costs)
-11. [Staff Performance & Tasks](#11-staff-performance--tasks)
-12. [Communication Templates (Email/SMS)](#12-communication-templates-emailsms)
-13. [Contract & Document Automation](#13-contract--document-automation)
-14. [User Roles & Permissions](#14-user-roles--permissions)
-15. [System Settings & Customization](#15-system-settings--customization)
-16. [Troubleshooting & Support](#16-troubleshooting--support)
+10. [User Management (Staff Access)](#10-user-management-staff-access)
+11. [Master Setup (Configuration)](#11-master-setup-configuration)
+12. [Troubleshooting & Support](#12-troubleshooting--support)
 
 ---
 
@@ -94,123 +90,111 @@ Leads are potential prospects still in the inquiry stage.
 
 ## 5. The Sale Journey (Step-by-Step)
 
-### Step 1: Reserving a Plot
-1.  Go to **Property/Plots**.
-2.  Search by Location/Phase.
-3.  Select an **Available** plot and click **Reserve**.
-4.  **Time Limit:** Reservations typically expire in 48-72 hours if no deposit is recorded.
+### Step 1: Reserving a Property
+1.  Navigate to **Projects** in the sidebar.
+2.  Select the specific project (e.g., *Arista Eminence 96*).
+3.  Identify the **Property Number** and verify the **LR Number**.
+4.  Change the **Property Status** to **Reserved** once the client confirms their choice.
 
-### Step 2: KYC & Document Uploads
-Navigate to the **Customer > Files** tab to upload:
-*   ID/Passport Copy
-*   KRA PIN Certificate
-*   Payment Slips (Initial Deposit)
-*   Signed Letter of Offer / Sale Agreement
+### Step 2: Client Documentation
+(See [Section 3: How to Create a Client](#3-how-to-create-a-client)). Ensure the client record is linked to the correct project and property.
 
-### Step 3: Billing
-1.  `Sales > Invoices > Create`.
-2.  Add the plot as a "Line Item".
-3.  Apply any **Early Bird Discounts** or **Cash Bonuses**.
-4.  Send to the customer directly via the **"Email PDF"** button.
+### Step 3: Recording Payments & Installments
+Navigate to **Account > Payments** to set up the billing plan.
 
 ---
 
-## 5. Financial Management
+## 6. Financial Management (Account Module)
 
-### 5.1 Recording Payments
-All payments (M-Pesa, Bank, Cheque) must be logged here to reflect in the customer's balance.
-*   Link each payment to a specific **Invoice Number**.
-*   **Partial Payments:** The system handles these automatically, updating the "Balance Due" in real-time.
+The **Account** module is where all revenue and project-related costs are tracked.
 
-### 5.2 Credit Notes & Refunds
-In case of a plot swap or cancellation:
-1.  Go to `Sales > Credit Notes`.
-2.  Issue a note to balance the customer's ledger.
+### 6.1 Recording Payments
+1.  Navigate to **Account > Payments**.
+2.  Click the green **+ Add Payment** button.
+3.  **Client & Property**: Select the Client, Project, and Property from the dropdowns.
+4.  **Commission**: Assign the Sales Agent and their commission percentage.
+5.  **Payment Schedule**: 
+    *   Add rows for each installment.
+    *   Enter **Expected Date** and **Expected Amount**.
+    *   As the client pays, enter the **Actual Date** and **Actual Amount**.
+6.  Click **Add Payment**.
 
----
-
-## 6. Property & Inventory Control
-Manage plots across **Diani, Kisumu, Athi River, and Nanyuki**.
-*   **Plots Map:** (If integrated) View a visual site plan showing sold vs. available plots.
-*   **Pricing Engine:** Update per-acre or per-plot prices based on current market valuations.
-
----
-
-## 7. Document & Title Deed Tracking
-The system tracks the **30-day processing commitment**.
-*   **Status Indicators:** `Pending Docs` -> `In Progress` -> `At Registry` -> `Ready` -> `Collected`.
-*   **Registry Details:** Log the Title Number and LR Number for easy searching.
+### 6.2 Managing Expenses
+Track operational and project-specific costs.
+1.  Navigate to **Account > Expenses**.
+2.  Click the **+ Add Expense** button.
+3.  **Fields**: Title, Amount (KES), Date, and Payment Method.
+4.  **Linking**: Link the expense to a specific **Sales Agent**, **Client**, and **Project** to track total project profitability.
 
 ---
 
-## 8. Reporting & Analytics
-*   **Sales Report:** View revenue by month, staff member, or project.
-*   **Lead Conversion Rate:** See which staff are most effective at closing deals.
-*   **Aging Report:** Identify customers who are behind on their installment plans.
+## 7. Property & Inventory Control (Projects Module)
+
+### 7.1 Adding a New Project
+1.  Navigate to **Projects**.
+2.  Click the **+ Add Project** button.
+3.  **Project Details**: Name, Image (Marketing flyer), and Address.
+4.  **Properties Sub-form**: Add individual plots/units by LR Number and Property Number. Specify Area (Acre/Sq Ft) and Price (KES/USD).
 
 ---
 
-## 9. Expense Tracking (Project Costs)
-Track the costs of developing your land projects.
-1.  Navigate to `Expenses > Record Expense`.
-2.  **Categories:** Surveyor Fees, Fencing, Title Processing Fees, Marketing, Site Visit Transport.
-3.  **Profitability:** Compare Project Revenue vs. Project Expenses.
+## 8. Document & Title Deed Tracking
+Ensure all "Sold" properties have their corresponding legal documents uploaded in the **Client Files**:
+- **ID/Passport Copy**
+- **KRA PIN Certificate**
+- **Signed Sale Agreement**
+- **Title Deed Scan** (once processing is complete).
 
 ---
 
-## 10. Staff Performance & Tasks
-*   **Tasks:** Assign follow-ups or document collection to specific staff.
-*   **Reminders:** Set browser or email notifications for upcoming site visits.
-*   **Goals:** Track individual sales targets vs. actual closures.
+## 9. Reporting & Analytics
+
+The **Reports** module provides real-time insights into your business.
+
+### 9.1 Available Reports
+*   **Sales Lead Report**: Track the status of every inquiry.
+*   **Payment Status Report**: Identify clients with pending balances.
+*   **Agent Performance Report**: Monitor sales targets and closures by staff.
+*   **Expense Report**: Summary of all costs incurred.
+*   **Customer Detail Report**: Full database of client contact information.
 
 ---
 
-## 11. Communication Templates (Email/SMS)
-Save time by using pre-approved templates:
-*   **Welcome Message:** Sent when a new lead is captured.
-*   **Payment Acknowledgment:** Automated thank-you note when a payment is logged.
-*   **Site Visit Reminder:** Sent 24 hours before a scheduled viewing.
-*   **Title Ready Alert:** Notification to the client that their deed is ready for collection.
+## 10. User Management (Staff Access)
+
+### 10.1 Adding a New User
+1.  Navigate to **User Management**.
+2.  Click the **+ Add User** button.
+3.  **Details**: Username, User Role, First/Last Name, Email, and Contact Number.
+4.  **Security**: Set a temporary password and ensure the status is **Active**.
 
 ---
 
-## 12. Contract & Document Automation
-Generate professional documents in seconds.
-*   **Letter of Offer:** Auto-fills customer name, plot number, and price.
-*   **Sale Agreement:** Generates the legal contract based on the agreed terms.
-*   **Receipts:** High-resolution PDFs with the Grey Oak logo and watermark.
+## 11. Master Setup (Configuration)
+
+The **Master** module allows Administrators to configure the system backbone.
+
+### 11.1 Setup Categories
+*   **Currencies**: Define KES/USD rates.
+*   **Property Sizes**: Define units (Acre, Sq Ft).
+*   **Lead Sources**: Track where leads come from (Facebook, Referrals).
+*   **Payment Methods**: M-Pesa, Bank Transfer, etc.
+*   **Roles & Permissions**: Manage what different staff roles can see and do.
 
 ---
 
-## 13. User Roles & Permissions
-*   **Super Admin:** Full system control.
-*   **Sales Manager:** Approves discounts and views all staff leads.
-*   **Sales Agent:** Manages own pipeline only.
-*   **Accountant:** Financial data entry and reporting only.
-*   **Legal:** Access to Title Deed and KYC modules only.
-
----
-
-## 14. System Settings & Customization
-(Admin Only)
-*   **Project Locations:** Add new phases (e.g., *Nanyuki Phase 5*).
-*   **Custom Fields:** Add fields like "Next of Kin" or "Preferred Site Visit Day".
-*   **Email Branding:** Update the logo and footer on system-generated emails.
-
----
-
-## 15. Troubleshooting & Support
+## 12. Troubleshooting & Support
 
 | Symptom | Cause | Solution |
 | :--- | :--- | :--- |
-| **Login Loop** | Cache/Cookie issue | Clear browser cache or use Incognito mode. |
-| **PDF Not Generating** | Pop-up blocker | Allow pop-ups from `greyoakcrm.co.ke`. |
-| **SMS Not Received** | Low Credit / Wrong Format | Ensure phone numbers start with `254...`. |
+| **Plot Not Available** | Already Reserved | Check the status in the Projects module. |
+| **Balance Inconsistency** | Payment not linked | Ensure actual payments are recorded in the Payment Schedule. |
+| **Email Not Sent** | SMTP Error | Check the system settings or contact IT. |
 
-### Contact Support
-*   **Helpdesk:** info@greyoak.co.ke
-*   **Head Office:** Trust Mansion, Tubman Road, Nairobi.
+### Support Contact
+*   **Email**: info@greyoak.co.ke
+*   **Physical Office**: Trust Mansion, Tubman Road, Nairobi CBD.
 
 ---
 
-*Manual Version: 4.0 | Ultimate Edition | © 2026 Grey Oak Limited*
+*Manual Version: 5.0 | Complete Verified Edition | © 2026 Grey Oak Limited*
